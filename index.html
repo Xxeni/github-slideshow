@@ -1,13 +1,95 @@
----
-layout: presentation
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <a href="#">
+        <img class="header-link" src="logo.png" alt="logo">
+    </a>
+    <nav class="header-nav">
+        <ul class="header-list">
+            <li><a class='header-nav-link' href="#">Catalog</a></li>
+            <li><a class='header-nav-link' href="#">Servises</a></li>
+            <li><a class='header-nav-link' href="#">Blog</a></li>
+            <li><a class='header-nav-link' href="#">About us</a></li>
+        </ul>
+    </nav>
+    <ul class="header-list">
+        <li><a class="header-tel" href="tell:+7194319698">719-431-9698</a></li>
+        <li><a class="button" href="#">Contact Us</a></li>
+    </ul>
+ </header>
+    <main>
+        <section class="poster">
+            <h1 class= "poster-title">The world's leading cleaning company</h1>
+            <button class="poster-button button">Get a Free Estimate</button>
+        </section>
+        <section class="services">
+            <h2 class="services-title">OUT MOST POPULAR SERVISES</h2>
+            <ul class="services-list">
+                <li class="service-card">
+                    <img class="service-card-img" src="servicel.png" alt="Carpet Cleaning">
+                    <h3 class="servise-card-title">Carpet Cleaning</h3>
+                    <p class="service-card-text">When you choose Chem-Dry, you get deeper clean, faster-drying carpet and healthier home for you </p>
+                <a class="service-card-button button" href="#">Learn More</a>
+                </li>
+                <li class="service-card">
+                    <img class="service-card-img" src="servicel.png" alt="Carpet Cleaning">
+                    <h3 class="servise-card-title">Carpet Cleaning</h3>
+                    <p class="service-card-text">When you choose Chem-Dry, you get deeper clean, faster-drying carpet and healthier home for you </p>
+                <a class="service-card-button button" href="#">Learn More</a>
+                </li>
+                <li class="service-card">
+                    <img class="service-card-img" src="servicel.png" alt="Carpet Cleaning">
+                    <h3 class="servise-card-title">Carpet Cleaning</h3>
+                    <p class="service-card-text">When you choose Chem-Dry, you get deeper clean, faster-drying carpet and healthier home for you </p>
+                <a class="service-card-button button" href="#">Learn More</a>
+                </li>
+                <li class="service-card">
+                    <img class="service-card-img" src="servicel.png" alt="Carpet Cleaning">
+                    <h3 class="servise-card-title">Carpet Cleaning</h3>
+                    <p class="service-card-text">When you choose Chem-Dry, you get deeper clean, faster-drying carpet and healthier home for you </p>
+                <a class="service-card-button button" href="#">Learn More</a>
+                </li>
+            </ul>
+        </section>
+        <section class="why-us">
+            <h2>Why Halley's Chem-Dry?</h2>
+            <p> Chem-Dry’s mission is helping people live healthy lives, which starts which clean and a healthy home. Our proprietary hot carbonating extraction cleaning process penetrates deep into the fibers, removing an average of 98% of common household allergens from carpets, upholstery and rugs and 89% of the airborne bacteria in your home when a sanitizer is added.* Plus, our green-certified solution, The Natural®, contains no soaps or detergents so it’s safe and non-toxic for your family and pets.</p>
+            <button>Learn More</button>
+            <img src="why-us.png" alt="why us">
+        </section>
+        <section class="partners">
+            <h2 class="hidden">Partners</h2>
+            <ul>
+                <li>
+                    <a href="#"><img src="partner1.png" alt="partner1.png"></a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <div class="map">
+        <section class="map-popup">
+            <h2 class="map-popup-title">Cheam-Dry</h2>
+            <p class="map-popup-text">9420 Cedar CT, Thornton, CO 80229</p>
+            <a class="header-tel" href="tell:+7194319698">(719) 431-9698</a>
+            <a class="map-popup-text buttom" href="#">Learn More</a>
+        </section>
+    </div>
+    <footer>
+        <h2 class="footer-title">Subscribe to our social networks</h2>
+        <ul>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">facebook</a></li>
+        </ul>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+    </footer>
+</body>
+</html>
